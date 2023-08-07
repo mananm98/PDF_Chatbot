@@ -1,0 +1,6 @@
+streamlit
+PyPDF2
+streamlit-extras
+langchain
+pickle
+scikit-learn
