@@ -2,5 +2,5 @@ streamlit
 PyPDF2
 streamlit-extras
 langchain
-pickle
+pickle5
 scikit-learn
