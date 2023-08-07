@@ -4,3 +4,4 @@ streamlit-extras
 langchain
 scikit-learn
 openai
+tiktoken
