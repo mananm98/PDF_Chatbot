@@ -14,7 +14,6 @@ from langchain.callbacks import get_openai_callback
 from langchain.prompts import PromptTemplate
 import pickle
 import os
-from dotenv import load_dotenv
 import sklearn
 
 with st.sidebar:
@@ -28,7 +27,6 @@ with st.sidebar:
 def main():
     st.header("Chat with PDF!")
     pdf = st.file_uploader("Upload your PDF",type = "pdf")
-    load_dotenv()
     if pdf is not None:
         pdf_reader = PdfReader(pdf)
         pdf_name = pdf.name[:-4]
