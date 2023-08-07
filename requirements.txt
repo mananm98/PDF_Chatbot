@@ -5,4 +5,4 @@ langchain
 scikit-learn
 openai
 tiktoken
-faiss
+faiss-cpu
