@@ -16,6 +16,10 @@ import pickle
 import os
 import sklearn
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
 with st.sidebar:
     st.title("LLM Chat App")
     st.markdown('''
@@ -90,7 +94,7 @@ def main():
                                     template=prompt_template, input_variables=["context", "question"]
                                 )
             
-            llm = OpenAI(temperature = 0,model_name="gpt-3.5-turbo",openai_api_key = st.secrets["OPENAI_API_KEY"])
+            llm = OpenAI(temperature = 0,model_name="gpt-3.5-turbo",openai_api_key = os.getenv("OPENAI_API_KEY"))
             # prompt.format(docs=docs)
             # PROMPT.format(input_documents= docs, question= query )
 
